@@ -1,5 +1,7 @@
 package com.ankit.mycoolapp;
 
+import com.ankit.mycoolapp.strategyDesignPattern.strategy.model.NormalCar;
+import com.ankit.mycoolapp.strategyDesignPattern.strategy.model.Vehicle;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

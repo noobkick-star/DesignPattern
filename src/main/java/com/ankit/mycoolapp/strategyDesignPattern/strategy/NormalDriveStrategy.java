@@ -1,4 +1,4 @@
-package com.ankit.mycoolapp.strategy;
+package com.ankit.mycoolapp.strategyDesignPattern.strategy;
 
 public class NormalDriveStrategy implements DriveStrategy{
     @Override

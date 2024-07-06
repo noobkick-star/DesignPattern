@@ -1,6 +1,6 @@
-package com.ankit.mycoolapp;
+package com.ankit.mycoolapp.strategyDesignPattern.strategy.model;
 
-import com.ankit.mycoolapp.strategy.DriveStrategy;
+import com.ankit.mycoolapp.strategyDesignPattern.strategy.DriveStrategy;
 
 public class Vehicle {
 
