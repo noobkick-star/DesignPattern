@@ -1,5 +1,9 @@
 package com.ankit.mycoolapp;
 
+import com.ankit.mycoolapp.decoratorPattern.BasePizza;
+import com.ankit.mycoolapp.decoratorPattern.CheeseTopping;
+import com.ankit.mycoolapp.decoratorPattern.MargheritaPizza;
+import com.ankit.mycoolapp.decoratorPattern.OnionTopping;
 import com.ankit.mycoolapp.observerDesignPattern.observable.IphoneObservableImpl;
 import com.ankit.mycoolapp.observerDesignPattern.observable.StockObservable;
 import com.ankit.mycoolapp.observerDesignPattern.observer.EmailAlertNotification;
@@ -16,7 +20,7 @@ public class MycoolappApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MycoolappApplication.class, args);
       Vehicle sportsCar = new NormalCar();
-	  sportsCar.drive();
+		sportsCar.drive();
 
        StockObservable stockObservable = new IphoneObservableImpl();
 		NotificationAlertObserver observer1 = new EmailAlertNotification(stockObservable,"observer1.gmail.com");
@@ -27,6 +31,14 @@ public class MycoolappApplication {
 		stockObservable.add(observer3);
 		stockObservable.remove(observer2);
 		stockObservable.setStockCount(5);
+
+
+		///////////////////////
+		//////////////////////
+		//////////////////////
+
+		BasePizza customPizza =  new OnionTopping (new CheeseTopping(new MargheritaPizza()));
+		System.out.println("prize of cheese tippong pizza is "+customPizza.cost());
 
 
 	}
